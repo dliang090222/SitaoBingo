@@ -20,6 +20,10 @@ public:
   ~MainWindow();
   Ui::MainWindow *GetUi();
 
+//  protected:
+//      void resizeEvent(QResizeEvent *event) override;
+
+
 private slots:
   void RightArrowSlot();
   void LeftArrowSlot();
@@ -33,6 +37,7 @@ private:
   void LoadGames();
   void LoadImages();
   void RenderImage();
+  void DynamicResize();
 
   Ui::MainWindow *ui_;
   QTimer *timer_;

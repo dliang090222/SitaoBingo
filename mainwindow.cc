@@ -5,11 +5,13 @@
 #include "QTimer"
 #include "game.h"
 #include <iostream>
+#include <QResizeEvent>
 
 const int delays[] = {20, 10, 8, 6, 5, 4, 3, 2, 1, 2, 3, 4, 5, 6, 8, 10, 20};
 const int kDelaySize = sizeof(delays) / sizeof(int);
 int iDelay = 0;
 int counter = delays[0];
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui_(new Ui::MainWindow), timer_(new QTimer(this)),
@@ -19,7 +21,7 @@ MainWindow::MainWindow(QWidget *parent)
   // style
   ui_->imageArea->setAlignment(Qt::AlignCenter);
   QFont font;
-  font.setPointSize(40);
+  font.setPointSize(80);
   ui_->nameArea->setFont(font);
   ui_->nameArea->setAlignment(Qt::AlignCenter);
 
