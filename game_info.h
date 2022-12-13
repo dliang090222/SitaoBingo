@@ -5,9 +5,9 @@
 #include <string>
 
 enum GameId {
-  one = 1,
-  two = 2,
-  three = 3,
+    one = 1,
+    two = 2,
+    three = 3,
 };
 
 struct Image {
@@ -65,10 +65,10 @@ const Image images[] = {
     },
 
     {
-        "MDC-Phoenix-vector.jpg",
-        "PHOENIX",
+        "donnell.jpg",
+        "DONNELL",
         one,
-        true,
+        false,
     },
     {
         "image4.jpg",
@@ -85,6 +85,79 @@ const Image images[] = {
     {
         "becden.jpg",
         "BECDEN",
+        one,
+        false,
+    },
+    {
+        "newYork.jpg",
+        "NEW YORK",
+        one,
+        false,
+    },
+    {
+        "MDC-Seattle-vector.jpg",
+        "SEATTLE",
+        one,
+        false,
+    },
+    {
+        "MDL CoE.jpg",
+        "CQC",
+        one,
+        false,
+    },
+    {
+        "MDC-Savannah-vector.jpg",
+        "SAVANNAH",
+        one,
+        true,
+    },
+    {
+        "MDC-Chicago-vector.jpg",
+        "CHICAGO",
+        one,
+        false,
+    },
+    {
+        "lasVegas.jpg",
+        "LAS VEGAS",
+        one,
+        false,
+    },
+    {
+        "hamilton.jpg",
+        "HAMILTON",
+        one,
+        false,
+    },
+    {
+        "ottawa.jpg",
+        "OTTAWA",
+        one,
+        false,
+    },
+    {
+        "diMartino.jpg",
+        "DIMARTINO",
+        one,
+        false,
+    },
+    {
+        "hermansonLemke.jpg",
+        "HERMANSON LEMKE",
+        one,
+        false,
+    },
+
+    {
+        "westbrook.jpg",
+        "WESTBROOK",
+        one,
+        false,
+    },
+    {
+        "northWest.jpg",
+        "NORTHWEST",
         one,
         false,
     },
@@ -116,7 +189,7 @@ const Image images[] = {
     },
     {
         "PtwoZ.jpg",
-        "PtwoZ",
+        "P2Z",
         two,
         false,
     },
@@ -175,15 +248,70 @@ const Image images[] = {
         false,
     },
     {
-        "Composite.jpg",
-        "COMPOSITE",
+        "Duraflex+Dentures.jpg",
+        "DURAFLEX",
         two,
         false,
     },
+    {
+        "Feldspathic_extended.jpg",
+        "VENEER",
+        two,
+        false,
+    },
+    {
+        "MDL_Dentures-1.jpg" ,
+        "COMPLETE DENTURE",
+        two,
+        false,
+    },
+    {
+        "MDL_Carbon_RK_Denture.jpg",
+        "DIGITAL DENTURE",
+        two,
+        false,
+    },
+    {
+        "modern_sportGuard_2.jpg",
+        "SPORT GUARD",
+        two,
+        false,
+    },
+    {
+        "MDN+PFZ.jpg",
+        "PFZ",
+        two,
+        false,
+    },
+    {
+        "Hawley+Retainer+2.jpg",
+        "HAWLEY RETAINER",
+        two,
+        false,
+    },
+    {
+        "Hard+Night+Guard.jpg",
+        "NIGHTGUARD",
+        two,
+        false,
+    },
+    {
+        "stay+plate.jpg",
+        "STAYPLATE",
+        two,
+        false,
+    },
+    {
+        "VisiClear.jpg",
+        "VISICLEAR",
+        two,
+        false,
+    },
+
     // CELEBRITLY SMILES
     {
         "JACHIE CHAN.jpg",
-        "JACHIE CHAN",
+        "JACKIE CHAN",
         three,
         false,
     },
@@ -286,6 +414,42 @@ const Image images[] = {
     {
         "skysports-naomi-osaka-tennis_4548three4three.jpg",
         "NAOMI OSAKA",
+        three,
+        false,
+    },
+    {
+        "simon-cowell-smile-wallpaper-background-57132-58893-hd-wallpapers.jpg",
+        "SIMON COWELL",
+        three,
+        false,
+    },
+    {
+        "MV5BMTMyNzYyNDE4MV5BMl5BanBnXkFtZTcwOTkxMDQ2NA@@._V1_.jpg",
+        "SANDRA OH",
+        three,
+        false,
+    },
+    {
+        "15596531.jpg",
+        "BEN AFFLECK",
+        three,
+        false,
+    },
+    {
+        "HYAZMHYX6VDP3CBVSYH3MTZZ4M.jpg",
+        "KEN JEONG",
+        three,
+        false,
+    },
+    {
+        "EWDZjQ0UMAIbdjS.jpg",
+        "RAMI MALEK",
+        three,
+        false,
+    },
+    {
+        "priyanka-chopra-don-2-the-king-is-back-berlin-premiere-2012-1.jpg",
+        "PRIYANKA CHOPRA",
         three,
         false,
     }};
