@@ -36,7 +36,7 @@ private slots:
 private:
   void LoadGames();
   void LoadImages();
-  void RenderImage();
+  void RenderDefault();
   void DynamicResize();
 
   Ui::MainWindow *ui_;
@@ -44,6 +44,7 @@ private:
   std::map<GameId, Game *> games_;
   int counter_;
   Game *currentGame_;
+  ImageNamePair defaultImage_;
 };
 
 #endif // MAINWINDOW_H

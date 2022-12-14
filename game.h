@@ -24,10 +24,9 @@ public:
   void RenderCurrent(Ui::MainWindow *ui);
   void Bingo(Ui::MainWindow *ui);
   void Shuffle();
-
-private:
   void RenderImage(Ui::MainWindow *ui, const ImageNamePair &image);
 
+private:
   GameId id_;
   std::vector<ImageNamePair *> images_;
   std::vector<ImageNamePair *> needToChoose_;

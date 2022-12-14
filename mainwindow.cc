@@ -38,7 +38,9 @@ MainWindow::MainWindow(QWidget *parent)
   connect(ui_->GameTwo, SIGNAL(clicked()), this, SLOT(GameTwo()));
   connect(ui_->GameThree, SIGNAL(clicked()), this, SLOT(GameThree()));
 
-  RenderImage();
+  defaultImage_.name = "Merry Chrismax";
+  defaultImage_.image.load(QString::fromStdString(":/images/merry_chrismas.jpg"));
+  RenderDefault();
 }
 
 MainWindow::~MainWindow() {
@@ -67,7 +69,7 @@ void MainWindow::LoadGames() {
   currentGame_ = games_.at(GameId::one);
 };
 
-void MainWindow::RenderImage() { currentGame_->RenderCurrent(ui_); }
+void MainWindow::RenderDefault() { currentGame_->RenderImage(ui_, defaultImage_); }
 
 // Slots
 
@@ -94,15 +96,15 @@ void MainWindow::BingoProcess() {
 
 void MainWindow::GameOne() {
   currentGame_ = games_.at(GameId::one);
-  RenderImage();
+  RenderDefault();
 }
 
 void MainWindow::GameTwo() {
   currentGame_ = games_.at(GameId::two);
-  RenderImage();
+  RenderDefault();
 }
 
 void MainWindow::GameThree() {
   currentGame_ = games_.at(GameId::three);
-  RenderImage();
+  RenderDefault();
 }
